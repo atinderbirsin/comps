@@ -9,6 +9,7 @@ function SideBar() {
     { label: "Button", to: "/button" },
     { label: "Accordion", to: "/accordion" },
     { label: "Modal", to: "/modal" },
+    { label: "Table", to: "/table" },
   ];
 
   const renderedList = links.map((link) => {
