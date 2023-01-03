@@ -8,6 +8,7 @@ function SideBar() {
     { label: "Dropdown", to: "/" },
     { label: "Button", to: "/button" },
     { label: "Accordion", to: "/accordion" },
+    { label: "Modal", to: "/modal" },
   ];
 
   const renderedList = links.map((link) => {

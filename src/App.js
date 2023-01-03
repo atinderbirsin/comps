@@ -3,10 +3,11 @@ import SideBar from "./components/SideBar";
 import AccordionPage from "./pages/AccordionPage";
 import ButtonPage from "./pages/ButtonPage";
 import DropdownPage from "./pages/DropdownPage";
+import ModalPage from "./pages/ModalPage";
 
 function App() {
   return (
-    <div className="h-screen flex">
+    <div className=" flex">
       <SideBar />
 
       <div className="flex items-center justify-center w-full">
@@ -18,6 +19,9 @@ function App() {
         </Route>
         <Route path="/accordion">
           <AccordionPage />
+        </Route>
+        <Route path="/modal">
+          <ModalPage />
         </Route>
       </div>
     </div>
