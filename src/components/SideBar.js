@@ -10,6 +10,7 @@ function SideBar() {
     { label: "Accordion", to: "/accordion" },
     { label: "Modal", to: "/modal" },
     { label: "Table", to: "/table" },
+    { label: "Counter", to: "/counter" },
   ];
 
   const renderedList = links.map((link) => {
