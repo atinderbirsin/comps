@@ -15,13 +15,13 @@ function ButtonPage() {
         </Button>
       </div>
       <div>
-        <Button warning outline onMouseEnter={handleClick}>
+        <Button warning  onMouseEnter={handleClick}>
           <GoCloudDownload />
           Dont click this!..
         </Button>
       </div>
       <div>
-        <Button danger rounded outline onMouseLeave={handleClick}>
+        <Button danger rounded  onMouseLeave={handleClick}>
           <GoDatabase />
           See Deal!
         </Button>

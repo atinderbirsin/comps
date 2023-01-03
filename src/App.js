@@ -1,22 +1,27 @@
-import Accordion from "./components/Accordion";
+import Route from "./components/Route";
+import SideBar from "./components/SideBar";
+import AccordionPage from "./pages/AccordionPage";
+import ButtonPage from "./pages/ButtonPage";
+import DropdownPage from "./pages/DropdownPage";
 
 function App() {
-    const items = [
-        {
-            label: 'Click to see hidden content!',
-            content: 'Hi there! , how are you?'
-        },
-        {
-            label: 'Click to see hidden content!',
-            content: 'Hi there! , how are you?'
-        },
-        {
-            label: 'Click to see hidden content!',
-            content: 'Hi there! , how are you?'
-        },
-    ]
+  return (
+    <div className="h-screen flex">
+      <SideBar />
 
-  return <Accordion items={items}/>;
+      <div className="flex items-center justify-center w-full">
+        <Route path="/">
+          <DropdownPage />
+        </Route>
+        <Route path="/button">
+          <ButtonPage />
+        </Route>
+        <Route path="/accordion">
+          <AccordionPage />
+        </Route>
+      </div>
+    </div>
+  );
 }
 
 export default App;

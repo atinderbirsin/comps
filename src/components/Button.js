@@ -36,7 +36,11 @@ function Button({
 
   const classes = `flex items-center gap-1 px-3 py-1.5 text-white ${backgroundColor} border ${roundedClass} ${outlineClass} ${rest.className}`;
 
-  return <button {...rest} className={classes}>{children}</button>;
+  return (
+    <button {...rest} className={classes}>
+      {children}
+    </button>
+  );
 }
 
 Button.propTypes = {
